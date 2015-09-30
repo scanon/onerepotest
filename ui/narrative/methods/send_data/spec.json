@@ -2,14 +2,14 @@
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
-  "visible" : true,
+  "visble" : true,
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : null
+    "output" : "null"
   },
   "parameters" : [ {
-    "id" : "genomeA",
+    "id" : "param0",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -19,7 +19,7 @@
       "valid_ws_types" : [ "KBaseGenomes.Genome" ]
     }
   }, {
-    "id" : "genomeB",
+    "id" : "param1",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -30,21 +30,27 @@
     }
   } ],
   "behavior" : {
-     "none" : {
-      "output_mapping" : [
+    "service-mapping" : {
+      "url" : "",
+      "name" : "onerepotest",
+      "method" : "send_data",
+      "input_mapping" : [
         {
-          "input_parameter": "genomeA",
+          "input_parameter": "param0",
           "target_property": "genomeA"
         },
         {
-          "input_parameter": "genomeB",
+          "input_parameter": "param1",
           "target_property": "genomeB"
-        },
+        }
+      ],
+      "output_mapping" : [
         {
-          "narrative_system_variable": "workspace",
-          "target_property": "workspaceName"
+          "service_method_output_path": [],
+          "target_property": "output"
         }
       ]
     }
-  }
+  },
+  "job_id_output_field": "docker"
 }

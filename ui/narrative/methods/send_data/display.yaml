@@ -1,47 +1,59 @@
 #
 # Define basic display information
 #
-name     : Compare Genome Features
+name     : Async Docker Test
 
 tooltip  : |
-    Compare the feature calls of two genomes.
+    Perform Async Docker Test.
 
 screenshots :
-    - compare_genome_features_input1.jpg
+    []
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
 suggestions :
     apps:
-        related : []
-        next : []
+        related :
+            []
+        next :
+            []
     methods:
-        related : []
-        next : []
+        related :
+            []
+        next :
+            []
 
 
 #
 # Configure the display and description of the parameters
 #
 parameters :
-    genomeA :
+    param0 :
         ui-name : |
-            Genome A
+            Genome1 ID
         short-hint : |
-            First genome to compare
+            Source genome 1
+        long-hint  : |
+            Source genome 1
 
-    genomeB :
+
+    param1 :
         ui-name : |
-            Genome B
+            Genome2 ID
         short-hint : |
-            Second genome to compare
+            Source genome 2
+        long-hint  : |
+            Source genome 2
 
 
 
 description : |
-    Compare the feature calls of two genomes by looking at the start/stop posistions and
-    annotations, and highlighting any differences.
+    Async Docker Test
 
+
+
+technical-description : ""
 
 publications :
+    []

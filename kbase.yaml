@@ -1,14 +1,14 @@
 module-name:
-    onerepotest
+    canon-onerepotest
 
 module-version:
     0.0.1
 
 module-description:
-    KBase module for integration tests of docker-based service/async method calls
+    KBase module for integration tests of docker-based service/async method calls (with Canon Action)
 
 service-language:
     python
 
 owners:
-    [rsutormin, wstester1]
+    [scanon, wstester1]

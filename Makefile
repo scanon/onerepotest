@@ -1,7 +1,7 @@
-SERVICE = onerepotest
-SERVICE_CAPS = onerepotest
+SERVICE = scanononerepotest
+SERVICE_CAPS = scanononerepotest
 SERVICE_PORT = 5000
-SPEC_FILE = onerepotest.spec
+SPEC_FILE = scanononerepotest.spec
 
 GITCOMMIT := $(shell git rev-parse --short HEAD)
 TAGS := $(shell git tag --contains $(GITCOMMIT))

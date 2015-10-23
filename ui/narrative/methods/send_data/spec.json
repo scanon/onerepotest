@@ -32,7 +32,7 @@
   "behavior" : {
     "service-mapping" : {
       "url" : "",
-      "name" : "onerepotest",
+      "name" : "scanononerepotest",
       "method" : "send_data",
       "input_mapping" : [
         {
